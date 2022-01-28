@@ -11,6 +11,7 @@ const refreshClassList = () => {
             }
 
             responseR.json().then(function(data){
+				console.log(data)
                 choice = data.results[seed].index
 				fetch('https://www.dnd5eapi.co/api/classes/' + choice)
     .then(
@@ -45,7 +46,7 @@ const refreshClassList = () => {
 }
 
 const refreshRaceList = () => {          
-	let seed = Math.floor(Math.random() * 12);
+	let seed = Math.floor(Math.random() * 9);
 	let choice = "";
 	
 	fetch('https://www.dnd5eapi.co/api/races/')
@@ -57,6 +58,7 @@ const refreshRaceList = () => {
             }
 
             responseR.json().then(function(data){
+				console.log(data)
                 choice = data.results[seed].index
 				fetch('https://www.dnd5eapi.co/api/races/' + choice)
     .then(
@@ -91,7 +93,7 @@ const refreshRaceList = () => {
 }
 
 const refreshMonsterList = () => {          
-	let seed = Math.floor(Math.random() * 12);
+	let seed = Math.floor(Math.random() * 332);
 	let choice = "";
 	
 	fetch('https://www.dnd5eapi.co/api/monsters/')
@@ -103,6 +105,7 @@ const refreshMonsterList = () => {
             }
 
             responseR.json().then(function(data){
+				console.log(data)
                 choice = data.results[seed].index
 				fetch('https://www.dnd5eapi.co/api/monsters/' + choice)
     .then(
