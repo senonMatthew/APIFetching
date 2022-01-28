@@ -135,3 +135,7 @@ const refreshMonsterList = () => {
 	
 	
 }
+
+const consolePrint = () => {
+	console.log("If we had more time, this would have been an entire list of the entries, and it wouldn't be a random generator. The code would have also been a lot cleaner to be honest.")
+}
