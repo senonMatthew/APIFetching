@@ -1,7 +1,5 @@
 /* Global */
 
-
-
 body {
 	font-family: 'Montserrat', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	margin: 5px 5px;
@@ -213,8 +211,9 @@ body {
 .img img {
 	height: 40vh;
 	width: 40vh;
-	transform: translateX(5vw);
+	transform: translateX(5vw) translateY(-8vh);
 	filter: drop-shadow(30px 30px 7px rgba(0,0,0,0.25));
+    z-index: 10;
 }
 
 .cn_top {
@@ -228,6 +227,8 @@ body {
 
 .sitename {
 	grid-area: 1 / 1 / 2 / 2;
+    transform: translateX(10px);
+    font-family: 'Montserrat', Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 }
 
 .searchbar {
@@ -236,6 +237,10 @@ body {
 
 .cn_bottom {
 	grid-area: 3 / 1 / 4 / 2;
+}
+
+.info {
+    transform: translateX(10px);
 }
 
 
